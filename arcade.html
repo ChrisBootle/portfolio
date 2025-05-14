@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Chris Bootle Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">Chris Bootle Portfolio</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								
+									</ul>
+								</li>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<article class="box post" style="padding: 10px; overflow: hidden; box-sizing: border-box;">
+						<!-- Your content -->
+					
+					<div class="container">
+
+						
+						<!-- Content -->
+							<article class="box post">
+								
+								<!-- Image Gallery -->
+
+								<!-- Carousel -->
+    <div class="carousel">
+        <button class="prev" onclick="prevImage()">&#10094;</button>
+        <div class="carousel-images">
+            <img src="images/DK1.png" alt="DK1">
+			<img src="images/DK2.png" alt="DK2">
+			<img src="images/DK3.png" alt="DK3">
+			<img src="images/Pepsi1.png" alt="Pepsi1">
+			<img src="images/Pepsi2.png" alt="Pepsi2">
+			<img src="images/Pepsi3.png" alt="Pepsi3">
+			<img src="images/Stool1.png" alt="Stool1">
+			<img src="images/Stool2.png" alt="Stool2">
+			<img src="images/Stool3.png" alt="Stool3">
+			<img src="images/PG1.png" alt="PG1">
+			<img src="images/PG2.png" alt="PG2">
+			<img src="images/PG3.png" alt="PG3">
+			<img src="images/Pizza1.png" alt="Pizza1">
+			<img src="images/Pizza2.png" alt="Pizza2">
+			<img src="images/Pizza3.png" alt="Pizza3">
+			<img src="images/Pizza4.png" alt="Pizza4">
+			<img src="images/PepsiCan.png" alt="PepsiCan">
+			<img src="images/PepsiCan2.png" alt="PepsiCan2">
+			<img src="images/PepsiCan3.png" alt="PepsiCan3">
+			<img src="images/Teddy1.png" alt="Teddy1">
+			<img src="images/Teddy2.png" alt="Teddy2">
+			<img src="images/Teddy3.png" alt="Teddy3">
+        </div>
+        <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+
+    <style>
+        /* Carousel container */
+        .carousel {
+            position: relative;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            margin: auto;
+            border: 2px solid #ddd;
+        }
+
+        /* Image container */
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%; /* For proper alignment */
+        }
+
+        /* Carousel images */
+        .carousel-images img {
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+
+        /* Navigation buttons */
+        .carousel button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 2rem;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .carousel button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+
+    <script>
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            const images = document.querySelector('.carousel-images');
+            const totalImages = images.children.length;
+            images.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        function prevImage() {
+            const images = document.querySelector('.carousel-images');
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.children.length - 1;
+            updateCarousel();
+        }
+
+        function nextImage() {
+            const images = document.querySelector('.carousel-images');
+            currentIndex = (currentIndex < images.children.length - 1) ? currentIndex + 1 : 0;
+            updateCarousel();
+        }
+    </script>
+</article>
+    
+								
+								<header>
+									<h2>Arcade</h2>
+									3ds Max, Adobe Substance & Unreal Engine<h3>Brief:</h3>
+								<p>
+									For this aspect of the assignment, you will create a series of 3D environment assets for an amusement arcade within Unreal Engine.
+									<br> 
+									<br>
+
+									1. An arcade machine e.g. traditional cabinet, Pinball, Air Hockey or claw crane grabber. · 1500 triangle count. · 2048 x 2048 texture space. Each 3D model should have its own basic PBR texture set: · Base Colour · Normal · Ambient Occlusion · Metallic · Roughness Or equivalent. Models should be arranged in a narratively driven and visually pleasing format for viewing.
+								</br>
+								<br> 
+2. A food or drinks dispenser e.g.
+
+Vending machine, Soda dispenser,
+
+Water dispenser or Gumball
+
+machine. · 1000 triangle count. · 1024 x 1024 texture space.
+</br>
+<br> 
+3. A seat e.g. bar-stool, dining-chair,
+
+high-chair or “gaming seat”. · 750 triangle count. · 1024 x 1024 texture space.
+</br>
+<br>
+4. A soft toy e.g. Cuddly Bear, Action
+
+Figure, Plush-toy or Doll. · 500 triangle count. · 1024 x 1024 texture space.
+</br>
+<br> 
+5. Used food or drinks packaging
+
+e.g. sippy-cup, crisps packets or
+
+burger-box · 500 triangle count. · 512 x 512 texture space. </br>
+								</p>
+								<!-- Content 
+								<h3>What i did:</h3>
+ 								<p>
+									What i did
+								</p>
+								-->
+							</header>
+
+							
+					</div>
+				</section>
+			</article>
+			
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+			
